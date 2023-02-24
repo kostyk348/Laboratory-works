@@ -1,0 +1,8 @@
+prefix=/home/konstantin/labs/catkin_ws/install
+
+Name: parachuk_pkg
+Description: Description of parachuk_pkg
+Version: 0.0.1
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

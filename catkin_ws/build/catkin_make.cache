@@ -1,0 +1,2 @@
+parachuk_pkg
+-DCATKIN_DEVEL_PREFIX=/home/konstantin/labs/catkin_ws/devel -DCMAKE_INSTALL_PREFIX=/home/konstantin/labs/catkin_ws/install -G Unix Makefiles
