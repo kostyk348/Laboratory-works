@@ -1,0 +1,10 @@
+DvachTredStarter.py
+TredBump.py
+TredBump.py.save
+TredOverflow.py
+launchlol.sh
+polinomynal.py
+polynominalll.py
+sciptname.txt
+scriptsname
+summ.py

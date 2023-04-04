@@ -1,0 +1,15 @@
+<launch>
+   <group ns="new_ns">
+    <arg name="hoge" /> 
+
+    <include file="$(find lr2_pkg)/launch/lol.launch" >    
+    <arg name="hoge" value="$(arg hoge)" />
+    </include>
+    <node name="reciever" pkg="rospy_tutorials" type="listener.py" output="screen">
+    <remap from="chatter" to="$(arg hoge)"/>
+    </node>
+    <node name="sender" pkg="rospy_tutorials" type="talker.py" output="screen">
+    <remap from="chatter" to="$(arg hoge)"/>
+    </node>
+   </group> 
+</launch>

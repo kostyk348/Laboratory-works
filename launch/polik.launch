@@ -1,0 +1,11 @@
+<launch>
+        <group ns="launch">
+        <node pkg="lr2_pkg" name="Polinomynal" type="polynominalll.py" output="screen"/>
+        <node pkg="lr2_pkg" name="Sum" type="summ.py" output="screen"/>
+    	</group>
+
+ 		<node name="Request" pkg="lr2_pkg" type="polinomynal.py" output="screen">
+    	<remap from="pubnum" to="launch/pubnum"/>
+        <remap from="result" to="launch/result"/>
+		</node>
+</launch>

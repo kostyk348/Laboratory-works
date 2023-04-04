@@ -1,0 +1,8 @@
+<launch>
+    <arg name="hoge" />
+    <param name="param" value="$(arg hoge)"/> 
+    <node name="listener_cpp" pkg="roscpp_tutorials" type="listener" output="screen">
+    
+    <remap from="chatter" to="$(arg hoge)"/>
+    </node>
+</launch>

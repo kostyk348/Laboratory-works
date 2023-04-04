@@ -1,0 +1,14 @@
+<launch>
+    
+      <group ns="2ch">
+        <node pkg="lr2_pkg" name="TredStart" type="DvachTredStarter.py"/>
+        <node pkg="lr2_pkg" name="TredBump" type="TredBump.py"/>
+        <node pkg="lr2_pkg" name="TredOverflow" type="TredOverflow.py"/>
+      </group>
+    
+       <group ns="4ch">
+        <node pkg="lr2_pkg" name="TredStart" type="DvachTredStarter.py"/>
+        <node pkg="lr2_pkg" name="TredBump" type="TredBump.py"/>
+        <node pkg="lr2_pkg" name="TredOverflow" type="TredOverflow.py"/>
+      </group>
+   </launch>
